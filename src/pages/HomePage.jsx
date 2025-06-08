@@ -7,6 +7,7 @@ function HomePage(){
     const [books, setBooks] = useState([])
     const fetchBooks = async ()=>{
        const response = await axios.get('http://localhost:7000/api/')
+    //    console.log(response.data.datas)
        setBooks(response.data.datas)
     }
 
