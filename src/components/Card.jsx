@@ -5,7 +5,7 @@ import Button from "./Button"
 function Card ({book}){
     return(
         <>
-        <Link to="/single-page">
+        <Link to={`/single-page/${book.id}`}>
 <div className="max-w-sm bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-green-300 transition-shadow duration-500">
   
   <div className="p-5">
